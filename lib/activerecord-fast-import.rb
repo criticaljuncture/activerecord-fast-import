@@ -77,7 +77,7 @@ module ActiveRecord #:nodoc:
     private
 
     def self.structure_string(spec)
-      if spec.is_a? Fixnum
+      if spec.is_a? Integer
         "0x%x" % spec
       else
         "'#{spec}'"
